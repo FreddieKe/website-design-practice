@@ -3,10 +3,13 @@ body {
     min-height: 100vh;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
+    margin:0;
 
 }
 
-.block {
+.block,
+.header-space,
+.content {
     flex: 1 1 0;
 }
 
@@ -23,7 +26,13 @@ body {
 }
 
 .block,
-.footer {
+.footer,
+.content,
+.header,
+ul,
+.content-layer1,
+.content-layer2,
+.blurb-container {
     display:flex;
 }
 
@@ -37,5 +46,55 @@ body {
 }
 
 .sidebar {
+    width:200px;
+}
+
+.content,
+.blurb-container{
+    flex-direction: column;
+}
+
+.header {
+    color:white;
+    flex: 1 1 0;
+    padding:10px;
+}
+
+ul {
+    margin:0px;
+    padding:0px;
+    list-style: none;
+}
+
+a {
+    text-decoration:none;
+    color:white;
+    padding:10px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.content-layer2 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: center;
+    gap:20px;
+}
+
+.title-text {
+    font-weight:700px;
+    font-size:30px;
+}
+
+.blurb-container {
+    width:300px;
+    gap:10px;
+}
+
+button {
     width:100px;
+    font-family: Arial, Helvetica, sans-serif;
 }
