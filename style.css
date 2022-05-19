@@ -37,7 +37,9 @@ ul,
 .pictures-layer-2,
 .pictures-layer-3,
 .quote-layer-1,
-.quote-layer-2{
+.quote-layer-2,
+.signup-box,
+.signup-text {
     display:flex;
 }
 
@@ -56,7 +58,8 @@ ul,
 
 .content,
 .blurb-container,
-.quote-container{
+.quote-container,
+.signup-text {
     flex-direction: column;
 }
 
@@ -110,6 +113,7 @@ button {
     font-weight:700px;
     padding: 10px;
     border-radius: 10px;
+    border: 2px solid white;
 }
 
 .pictures-layer-1 {
@@ -159,4 +163,33 @@ button {
 
 .quotes {
     justify-content: center;
+    margin:50px;
+}
+
+.signup {
+    justify-content:center;
+}
+
+.signup-box {
+    justify-content:center;
+    background-color: #3882f6;
+    padding:30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+
+.signup-block {
+    width:195px;
+}
+
+.signup-header {
+    font-size: 24px;
+    font-weight: 900;
+    color: white;
+}
+
+.signup-text {
+    font-size: 18px;
+    color: white;
 }
