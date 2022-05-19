@@ -2,9 +2,9 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin:0;
-
+    font-size:18px;
 }
 
 .block,
@@ -14,7 +14,7 @@ body {
 }
 
 .blue {
-    background-color: rgb(61, 61, 83);
+    background-color: #1f2937;
 }
 
 .white {
@@ -30,9 +30,14 @@ body {
 .content,
 .header,
 ul,
-.content-layer1,
-.content-layer2,
-.blurb-container {
+.header-content-layer1,
+.header-content-layer2,
+.blurb-container,
+.pictures-layer-1,
+.pictures-layer-2,
+.pictures-layer-3,
+.quote-layer-1,
+.quote-layer-2{
     display:flex;
 }
 
@@ -50,7 +55,8 @@ ul,
 }
 
 .content,
-.blurb-container{
+.blurb-container,
+.quote-container{
     flex-direction: column;
 }
 
@@ -73,20 +79,20 @@ a {
 }
 
 .logo {
-    font-weight: 700;
-    font-size: 30px;
+    font-weight: 900;
+    font-size: 48px;
 }
 
-.content-layer2 {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    justify-content: center;
+.header-content-layer2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: space-between;
     gap:20px;
 }
 
 .title-text {
-    font-weight:700px;
-    font-size:30px;
+    font-weight: 900;
+    font-size: 24px;
 }
 
 .blurb-container {
@@ -97,4 +103,60 @@ a {
 button {
     width:100px;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #3882f6;
+    color: white;
+    font-size:1em;
+    font-family: inherit;
+    font-weight:700px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.pictures-layer-1 {
+    justify-content: center;
+    padding: 20px;
+    font-size:24px;
+    font-weight: 700;
+}
+
+.pictures-layer-2 {
+    gap:20px;
+    justify-content: center;
+    margin: 5px;
+}
+
+.pictures-layer-2 img{
+    width: 150px;
+    height: 150px;
+    border-radius:20px;
+    border: 3px solid #3882f6;
+}
+
+.pictures-layer-3{
+    justify-content:center;
+    gap:20px;
+}
+
+.pictures-layer-3 .text {
+    width:156px;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.quote-layer-1 {
+    justify-content: center;
+    font-size:24px;
+}
+
+.quote-layer-2 {
+    flex-direction:row-reverse;
+    margin-right:196px;
+}
+
+.quote-text {
+    width:684px;
+}
+
+.quotes {
+    justify-content: center;
 }
